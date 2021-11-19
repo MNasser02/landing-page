@@ -5,52 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
-      <img src="./img/logo.svg" />
-      <ul>
-        <li><a src="#">link one</a></li>
-        <li><a src="#">link two</a></li>
-        <li><a src="#">link three</a></li>
-      </ul>
-      <h1>Intro to Quantum Computing</h1>
-      <p>
-        Computers are awesome, quantum physics is beautiful, so what aboud
-        <stron>QUANTUM COMPUTERS?!</stron> Quantum computing is a type of
-        computation that harnesses the collective properties of quantum states,
-        such as superposition, interference, and entanglement, to perform
-        calculations. Join our course now for a deeper dive in the wonderful
-        world of quantum computing!
-      </p>
-      <img src="./img/quantum-cmp.jpg" alt="Quantum computer" />
-    </header>
+    <section class="hero">
+      <header>
+        <img src="./img/logo.png" width="50" height="50" />
+        <ul>
+          <li><a src="#">Home</a></li>
+          <li><a src="#">About</a></li>
+          <li><a src="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="intro">
+        <div>
+          <h1>Intro to Quantum Computing</h1>
+          <p>
+            Computers are awesome, quantum physics is beautiful, so what about
+            <stron>QUANTUM COMPUTERS?!</stron> Quantum computing is a type of
+            computation that harnesses the collective properties of quantum
+            states, such as superposition, interference, and entanglement, to
+            perform calculations. Join our course now for a deeper dive in the
+            wonderful world of quantum computing!
+          </p>
+          <a type="button" href="#">Sign Up</a>
+        </div>
+        <img src="./img/quantum-cmp.jpg" alt="Quantum computer" width="600" />
+      </div>
+    </section>
     <section class="info">
       <h2>You'll Learn About:</h2>
       <div class="imgs">
         <figure>
-          <img src="./img/clock.jpg" />
+          <img src="./img/clock.jpg" width="150" height="150" />
           <figcaption>
             The greatest scientists who contributed to the idea, and its
             evolution.
           </figcaption>
         </figure>
         <figure>
-          <img src="./img/binary.jpg" alt="sphere with zeros and ones" />
+          <img
+            src="./img/binary.jpg"
+            alt="sphere with zeros and ones"
+            width="150"
+            height="150"
+          />
           <figcaption>
             The qubit, which is the basic unit of quantum information—the
             quantum version of the classic binary bit.
           </figcaption>
         </figure>
         <figure>
-          <img src="./img/algorithm.jpg" alt="green code" />
+          <img
+            src="./img/algorithm.jpg"
+            alt="green code"
+            width="150"
+            height="150"
+          />
           <figcaption>
             Quantum algorithms that offer more than a polynomial speedup over
             the best known classical algorithm
           </figcaption>
         </figure>
         <figure>
-          <img src="./img/potential.jpg" alt="person staring at stars" />
+          <img
+            src="./img/potential.jpg"
+            alt="person staring at stars"
+            width="150"
+            height="150"
+          />
           <figcaption>
             Its great potential, from cryptography, to searching problems, to
             simulation of quantum systems, and many more!
@@ -59,19 +82,21 @@
       </div>
     </section>
     <section class="quote">
-      <p>
-        “Simulating the behavior of 100 billion neurons of human brain is not
-        feasible by classical computer but quantum machine learning promises to
-        fulfill that requirement.”
-      </p>
-      <p>-Amit Ray</p>
+      <div>
+        <p class="text">
+          “Simulating the behavior of 100 billion neurons of human<br />
+          brain is not feasible by classical computer but quantum<br />
+          machine learning promises to fulfill that requirement.”
+        </p>
+        <p class="name">-Amit Ray</p>
+      </div>
     </section>
     <section class="sign-up">
       <div class="text">
         <h2>Learn about the future of computers! It's time!</h2>
         <p>Sign up for our course by clicking the button right over there!</p>
-        <button>Sign up</button>
       </div>
+      <a type="button" href="#">Sign up</a>
     </section>
     <footer>
       <p>Copyright © The Odin Project 2021</p>
